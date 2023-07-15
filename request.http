@@ -1,1 +1,19 @@
-GET  https://miguelangel2022sistemas-refactored-x7g54vr6vpj2p5v5-8080.preview.app.github.dev/
+@server =  https://miguelangel2022sistemas-refactored-x7g54vr6vpj2p5v5-8080.preview.app.github.dev
+###
+GET {{server}}
+###
+GET {{server}}/cursos
+
+###Agregar
+POST  {{server}}/cursos
+Content-Type: application/json
+
+{"nombre": "comunicacion", "creditos":3}
+
+###ver por id
+GET {{server}}/cursos/3
+###editar
+PATCH   {{server}}/cursos/2
+Content-Type: application/json
+
+{"nombre": "quimica"}
