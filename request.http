@@ -30,3 +30,31 @@ GET {{server}}/cursos?size=2&page=1&sort=creditos,desc
 ###ver 
 GET {{server}}/cursos/search/findByNombre?nombre=quimica
 
+########################################################
+
+###
+GET {{server}}/carreras
+
+###Agregar
+POST  {{server}}/carreras
+Content-Type: application/json
+
+{"nombre": "Desarrollo de sistemas e informacion"}
+
+###Agregar
+POST  {{server}}/carreras
+Content-Type: application/json
+
+{"nombre": "Marketing"}
+
+
+###
+GET {{server}}/carreras/2
+
+###
+GET {{server}}/carreras/1/cursos
+
+###
+GET {{server}}/cursos/1/carrera
+
+
