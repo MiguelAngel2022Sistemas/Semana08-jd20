@@ -17,3 +17,16 @@ PATCH   {{server}}/cursos/2
 Content-Type: application/json
 
 {"nombre": "quimica"}
+
+###ver por orden
+GET {{server}}/cursos?size=2&page=0
+
+###ver por orden
+GET {{server}}/cursos?size=2&page=0&sort=creditos,desc
+
+###ver por orden
+GET {{server}}/cursos?size=2&page=1&sort=creditos,desc
+
+###ver 
+GET {{server}}/cursos/search/findByNombre?nombre=quimica
+
