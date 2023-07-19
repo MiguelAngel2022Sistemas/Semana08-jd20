@@ -1,4 +1,7 @@
-@server =  https://miguelangel2022sistemas-refactored-x7g54vr6vpj2p5v5-8080.preview.app.github.dev
+#@server =  https://miguelangel2022sistemas-refactored-x7g54vr6vpj2p5v5-8080.preview.app.github.dev
+
+
+@server = https://s8miguel.onrender.com
 ###
 GET {{server}}
 ###
